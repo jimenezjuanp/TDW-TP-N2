@@ -9,12 +9,23 @@ a {
   text-decoration: none;
   color: white;
 }
+nav ul, ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.imagen-completa {
+  width: 100vw;
+  height: auto;
+  display: block;
 }
 .icono-destacado {
   text-align: center;
+  margin-top: 20px;
 }
 h1 {
   text-align: center;
@@ -31,6 +42,7 @@ p.etiquetas {
     justify-content: center;  
     gap: 40px;
     margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .seccion-contacto {
@@ -64,7 +76,7 @@ p.etiquetas {
 .contenedor-botones button {
   border: none;
   padding: 10px 25px;
-  border-radius: 20px; /* Bordes muy redondeados (tipo píldora) */
+  border-radius: 20px;
   color: white;
   font-size: 14px;
   cursor: pointer;
