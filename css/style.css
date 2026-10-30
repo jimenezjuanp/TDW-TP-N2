@@ -1,0 +1,480 @@
+/* Encabezado */
+header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barra negra superior */
+.top-bar {
+  background-color: #222222;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  font-size: 14px;
+}
+
+.top-bar-derecha {
+  display: flex;
+  gap: 20px;
+}
+
+.top-bar-derecha span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.top-bar-derecha i {
+  font-size: 10px;
+}
+
+/* Barra naranja encabezado */
+.main-bar {
+  background-color: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+/* Menú Hamburguesa --- */
+button.hamb {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* Quitar los puntos de la lista */
+li.sin-viñeta {
+  list-style-type: none;
+}
+
+/* Sección Principal */
+.hero {
+  position: relative; 
+  width: 100%;
+  display: flex;
+}
+
+.hero .imagen-completa {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caja-flotante {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.caja-flotante h2 {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 15px 35px;
+  margin: 0;
+  font-size: 28px;
+  font-weight: normal;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.caja-flotante p {
+  margin: 0;
+  font-size: 18px;
+  color: #222222;
+}
+
+.btn-naranja {
+  background-color: #f0a83e;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+/* Sección Articulos destacados */
+.icono-destacado {
+  text-align: center;
+  margin-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  color: #3e2723;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.etiquetas {
+  text-align: center;
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.separador {
+  margin: 0 10px;
+}
+
+/* Contenedor principal de los 3 articulos */
+.productos {
+  display: flex;           
+  justify-content: center;  
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 80px auto;
+  padding: 0 20px;
+}
+
+/* Estilos de cada articulo */
+.tarjeta-producto {
+  background-color: #fbf9f5;
+  padding: 40px 20px 20px 20px;
+  width: 30%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tarjeta-producto img {
+  max-width: 130px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.nombre-producto {
+  margin: 0;
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.precio {
+  margin: 5px 0 0 0;
+  color: #f0a83e;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Sección Contactanos */
+.seccion-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.seccion-contacto h2 {
+  color: #3e2723;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.formulario input {
+  background-color: #3e2723;
+  color: white;
+  border: none;
+  padding: 18px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.formulario input::placeholder {
+  color: #cccccc;
+}
+
+.contenedor-botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.contenedor-botones button {
+  border: none;
+  padding: 12px 40px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 160px;
+}
+
+.btn-reset {
+  background-color: #909090;
+}
+
+.btn-enviar {
+  background-color: #f0a83e;
+}
+
+/* Barra suscripción */
+.newsletter {
+  background-color: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.newsletter-texto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.formulario-suscripcion {
+  display: flex;
+  gap: 10px;
+}
+
+.formulario-suscripcion input {
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: none;
+  width: 300px;
+  font-size: 14px;
+}
+
+.btn-suscribir {
+  background-color: #3e2723;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #3e2723;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icono-circulo {
+  width: 70px;
+  height: 70px;
+  background-color: #6d5b58;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.texto-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+}
+
+.texto-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-logo img {
+  max-width: 250px;
+}
+
+.footer-bottom {
+  background-color: #222222;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Diseño para tablet y celulares */
+@media (max-width: 768px) {
+  
+  .main-bar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
+  }
+
+/* Barra principal y menu hamburguesa */
+  .main-bar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  button.hamb {
+    display: block;
+  }
+
+  nav#menu-principal {
+    display: none;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  nav#menu-principal.open {
+    display: block; 
+  }
+
+  nav#menu-principal ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjeta-producto {
+    width: 80%;
+  }
+
+  /* Adaptación de la sección Principal */
+  .hero {
+    display: flex;
+    height: 450px;
+  }
+
+  .hero .imagen-completa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .caja-flotante {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    right: auto; 
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    padding: 0;
+  }
+
+  .formulario {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .contenedor-botones {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .newsletter {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .formulario-suscripcion {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .formulario-suscripcion input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .footer-contenido {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
